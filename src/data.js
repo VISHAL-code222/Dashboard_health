@@ -11,12 +11,12 @@ export const navigationLinks = [
 ];
 
 export const userProfile = {
-  name: 'Dr.Vishal',
-  avatar: '/src/assets/image1.jpg',
+  name: 'Dr.Vishal'
+ 
 };
 
 export const anatomicalHealthData = {
-  mainIllustration: '/src/assets/image3.png',
+ 
   indicators: [
     { id: 'heart', name: 'Healthy Heart', status: 'healthy', position: { top: '30%', left: '45%' } },
     { id: 'lungs', name: 'Lungs', status: 'critical', position: { top: '40%', left: '30%' } },

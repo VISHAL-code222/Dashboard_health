@@ -1,14 +1,15 @@
 import React from 'react';
 import { anatomicalHealthData } from '../data';
 import '../CSS/AnatomySection.css';
+import img2 from "../assets/image3.png"
 
 const AnatomySection = () => {
-  const { mainIllustration, indicators } = anatomicalHealthData;
+  const {  indicators } = anatomicalHealthData;
 
   return (
     <div className="anatomy-section">
       <div className="anatomy-image-container">
-        <img src={mainIllustration} alt="Anatomical Illustration" className="anatomy-image" />
+        <img src={img2} alt="Anatomical Illustration" className="anatomy-image" />
         {indicators.map((indicator) => (
           <div
             key={indicator.id}

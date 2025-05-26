@@ -1,6 +1,9 @@
 import React from 'react';
-import { userProfile, icons } from '../data';
+import {  icons,userProfile } from '../data';
 import '../CSS/Header.css';
+import img1 from "../assets/image1.jpg"
+
+
 
 const Header = () => {
   return (
@@ -15,7 +18,7 @@ const Header = () => {
       <div className="header-actions">
         <button className="action-btn notification-btn">{icons.notification}</button>
         <div className="user-profile">
-          <img src={userProfile.avatar} alt={userProfile.name} className="user-avatar" />
+          <img src={img1} alt="Vishal Lodha" className="user-avatar" />
           <span>{userProfile.name}</span>
         </div>
         <button className="action-btn add-btn">{icons.add}</button>
