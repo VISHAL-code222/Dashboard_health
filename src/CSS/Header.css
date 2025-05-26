@@ -1,0 +1,153 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  height: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.header-logo .icon {
+  margin-right: 8px;
+  color: #3498db;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 8px 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-search .search-icon {
+  margin-right: 10px;
+  color: #7f8c8d;
+}
+
+.header-search input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  width: 100%;
+  color: #34495e;
+}
+
+.header-search input[type="text"]::placeholder {
+  color: #bdc3c7;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action-btn {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+  font-size: 20px;
+  color: #7f8c8d;
+  padding: 5px;
+}
+
+.notification-btn {
+  position: relative;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ecf0f1;
+}
+
+.user-profile span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.add-btn {
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 10px 15px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-search {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .user-profile span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo h1 {
+    font-size: 20px;
+  }
+
+  .action-btn {
+    font-size: 18px;
+  }
+
+  .add-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .user-avatar {
+    width: 35px;
+    height: 35px;
+  }
+}

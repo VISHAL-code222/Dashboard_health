@@ -1,0 +1,85 @@
+.simple-appointment-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.simple-appointment-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon-container {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #eaf3fb;
+  border-radius: 50%;
+}
+
+.appointment-icon {
+  font-size: 18px;
+  color: #3498db;
+}
+
+.appointment-details {
+  flex-grow: 1;
+}
+
+.appointment-title {
+  margin: 0 0 3px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.appointment-time {
+  margin: 0;
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.appointment-options {
+  margin-left: 10px;
+}
+
+.options-icon {
+  font-size: 18px;
+  color: #bdc3c7;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .simple-appointment-card {
+    padding: 6px 8px;
+  }
+  .card-icon-container {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+  }
+  .appointment-icon {
+    font-size: 13px;
+  }
+  .appointment-title {
+    font-size: 11px;
+  }
+  .appointment-time {
+    font-size: 9px;
+  }
+  .options-icon {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+ 
+}

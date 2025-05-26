@@ -1,0 +1,115 @@
+.health-status-cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.health-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.health-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-right: 15px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.card-details {
+  flex-grow: 1;
+}
+
+.card-organ {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.card-date {
+  margin: 0;
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+.card-status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.health-card.critical {
+  border-left-color: #e74c3c;
+}
+.health-card.critical .card-icon {
+  color: #e74c3c;
+}
+.health-card.critical .card-status-indicator {
+  background-color: #e74c3c;
+}
+
+.health-card.needs-attention {
+  border-left-color: #f39c12;
+}
+.health-card.needs-attention .card-icon {
+  color: #f39c12;
+}
+.health-card.needs-attention .card-status-indicator {
+  background-color: #f39c12;
+}
+
+.health-card.healthy {
+  border-left-color: #2ecc71;
+}
+.health-card.healthy .card-icon {
+  color: #2ecc71;
+}
+.health-card.healthy .card-status-indicator {
+  background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .health-card {
+    padding: 12px;
+  }
+  .card-icon {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+  .card-organ {
+    font-size: 15px;
+  }
+  .card-date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-status-cards-section {
+    gap: 10px;
+  }
+  .health-card {
+    padding: 10px;
+    border-left-width: 4px;
+  }
+  .card-icon {
+    font-size: 22px;
+  }
+  .card-organ {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,69 @@
+.dashboard-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.dashboard-overview-section {
+  width: 100%;
+}
+
+.dashboard-bottom-row {
+  display: flex;
+  gap: 25px;
+}
+
+.dashboard-bottom-row > .calendar-view-section {
+  flex-grow: 2;
+  min-width: 0;
+}
+
+.dashboard-bottom-row > .upcoming-schedule-section {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card-header h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .dashboard-main-content {
+    gap: 20px;
+  }
+  .dashboard-bottom-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    padding: 15px;
+  }
+  .dashboard-card-header h3 {
+    font-size: 16px;
+  }
+}
+

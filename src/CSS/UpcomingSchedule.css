@@ -1,0 +1,55 @@
+.upcoming-schedule-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.upcoming-schedule-section .dashboard-card-header h3 {
+  margin-bottom: 20px;
+}
+
+.schedule-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.day-group h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #566573;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .upcoming-schedule-section {
+    padding: 15px;
+  }
+  .upcoming-schedule-section .dashboard-card-header h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  .day-group h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .appointments-list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .day-group h4 {
+    font-size: 14px;
+  }
+}
